@@ -27,20 +27,6 @@ img {
 
 .login-form button {
   font-family: "Nunito", sans-serif;
-  background-color: transparent;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.login-form button:hover {
-  color: #1fa85f; /* Green */
-  border: none;
-  transition-duration: 0.3s;
 }
 
 #weather {
