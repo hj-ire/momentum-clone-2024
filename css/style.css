@@ -4,7 +4,7 @@
 body {
   font-family: "Nunito", sans-serif;
   color: white;
-  margin: 30px;
+  margin: 30px 10px 0px 100px;
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +22,25 @@ img {
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  filter: brightness(80%);
+  filter: brightness(70%);
+}
+
+.login-form button {
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.login-form button:hover {
+  color: #1fa85f; /* Green */
+  border: none;
+  transition-duration: 0.3s;
 }
 
 #weather {
@@ -53,19 +71,19 @@ img {
 }
 
 #clock {
-  margin: 100px 30px 0px 0px;
+  margin: 70px 30px 0px 0px;
   font-size: 100px;
   font-weight: 600;
 }
 
 #greeting {
-  font-size: 50px;
-  margin-bottom: 80px;
+  font-size: 45px;
+  margin-bottom: 70px;
 }
 
 #focus {
   font-size: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 #todo-form {
@@ -80,6 +98,7 @@ img {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
+  margin-bottom: 10px;
 }
 
 #todo-form input::placeholder {
@@ -88,14 +107,40 @@ img {
 }
 
 #todo-list {
+  height: 160px;
+  font-size: 20px;
   margin-bottom: 30px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#todo-list::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+#todo-list li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  transition-duration: 0.5s;
+  margin-left: 3px;
+}
+
+#todo-list li button:hover {
+  color: #d83122; /* Green */
+  border: none;
 }
 
 #quote {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 #quote span:last-child {
