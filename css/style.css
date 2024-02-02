@@ -1,0 +1,104 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  filter: brightness(80%);
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+
+#weather span:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 160px;
+  height: 30px;
+  color: white;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.login-form input::placeholder {
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+#clock {
+  margin: 100px 30px 0px 0px;
+  font-size: 100px;
+  font-weight: 600;
+}
+
+#greeting {
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+
+#focus {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+#todo-form {
+  margin-bottom: 5px;
+}
+
+#todo-form input {
+  width: 500px;
+  height: 30px;
+  color: white;
+  font-size: 23px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+#todo-list {
+  margin-bottom: 30px;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 17px;
+}
+
+#quote span:last-child {
+  opacity: 70%;
+  font-size: 15px;
+}
